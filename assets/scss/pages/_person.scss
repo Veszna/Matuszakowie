@@ -1,0 +1,13 @@
+.image-text-container {
+  display: flex; 
+  gap: 20px;
+  margin: 20px 0;
+}
+
+@media (max-width: 1180px) {
+  
+  .image-text-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

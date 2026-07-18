@@ -1,0 +1,9 @@
+@use '../abstracts/' as *;
+
+header {  
+  width: 100%; 
+}
+
+.header-pages {
+  background-color: $header-color;
+}

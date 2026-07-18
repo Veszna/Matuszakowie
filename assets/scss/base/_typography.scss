@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+
+.fredericka-the-great-regular {
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 8vw + 1rem, 8rem);
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: clamp(1.25rem, 8vw + 1rem, 4rem);
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: clamp(1rem, 8vw + 1rem, 3rem);
+  font-weight: 100;
+  text-align: center;
+  margin: 20px 0;
+  line-height: 1.1;
+}

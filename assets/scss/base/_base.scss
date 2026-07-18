@@ -1,0 +1,8 @@
+@use '../abstracts/' as *;
+
+.container { 
+  width: min(70%, 1200px);
+  margin: 0 auto;
+  background-color: $background-color;
+  font-family: "Inter", sans-serif;
+}

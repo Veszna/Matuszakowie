@@ -1,0 +1,55 @@
+.image-container {
+  position: relative;
+  margin-bottom: 350px;   
+}
+
+.image-house {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-couple {
+  position: absolute;
+  top: 73%;
+  left: 9%;
+  width: 48%;
+  max-width: 327px;
+  aspect-ratio: 327 / 416;
+  object-fit: cover;
+  z-index: 10;
+}
+
+.text-presentation {
+  position: absolute;
+  top: 105%;
+  left: 48%;
+  width: 52%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+
+@media (max-width: 1180px) {
+  .image-container {
+    margin-bottom: 40px; 
+  }
+
+  .image-couple {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 327px;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .text-presentation {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 10px;
+  }
+}
