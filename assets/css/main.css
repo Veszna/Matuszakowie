@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter");
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
 .container {
   width: min(70%, 1200px);
   margin: 0 auto;
@@ -27,6 +33,7 @@ h1 {
 h2 {
   font-size: clamp(1.25rem, 8vw + 1rem, 4rem);
   line-height: 1.1;
+  padding: 0 1rem;
 }
 
 h3 {
@@ -44,6 +51,63 @@ figcaption {
   margin-top: 5px;
 }
 
+.nav-dropdown {
+  list-style: none;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-button {
+  border: none;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.nav-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  display: none;
+  min-width: 150px;
+}
+
+.nav-menu li {
+  margin: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-menu.show {
+  display: block;
+}
+
+.nav-arrow {
+  font-size: 1.1rem;
+  margin-left: 0.3rem;
+  transition: transform 0.2s;
+}
+
+.home-button {
+  padding: 0.5rem 1rem;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 12px 16px;
+  color: #333333;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 0.8rem;
+}
+
+.nav-menu a:hover {
+  background-color: #616972;
+  color: #ffffff;
+}
+
 footer {
   width: 100%;
   min-height: 100px;
@@ -55,10 +119,22 @@ footer {
 
 header {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-pages {
+  width: 100%;
   background-color: #F2EFEF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-content {
+  max-width: 70%;
+  margin: 0 auto;
 }
 
 .image-text-container {

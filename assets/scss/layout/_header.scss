@@ -1,9 +1,16 @@
 @use '../abstracts/' as *;
 
 header {  
-  width: 100%; 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
 }
 
 .header-pages {
+  width: 100%;
   background-color: $header-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
