@@ -1,6 +1,11 @@
-.main-nav {}
+// .main-nav {}
 
-.nav-list {}
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
 
 .nav-dropdown {
     list-style: none;
@@ -29,18 +34,22 @@
 
 .nav-menu li {
     margin: 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .15);
 }
 
 .nav-menu.show {
     display: block;
-    // transform: rotate(180deg);
 }
 
 .nav-arrow {
+    display: inline-block;
     font-size: 1.1rem;
     margin-left: 0.3rem;
     transition: transform .2s;
+}
+
+.nav-arrow.show {
+    transform: rotate(180deg);
 }
 
 .home-button {

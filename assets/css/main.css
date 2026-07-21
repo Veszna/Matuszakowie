@@ -51,6 +51,13 @@ figcaption {
   margin-top: 5px;
 }
 
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
 .nav-dropdown {
   list-style: none;
   position: relative;
@@ -85,9 +92,14 @@ figcaption {
 }
 
 .nav-arrow {
+  display: inline-block;
   font-size: 1.1rem;
   margin-left: 0.3rem;
   transition: transform 0.2s;
+}
+
+.nav-arrow.show {
+  transform: rotate(180deg);
 }
 
 .home-button {
