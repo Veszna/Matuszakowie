@@ -1,4 +1,15 @@
-// .main-nav {}
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+@media (max-width: 1180px) {
+    .main-nav {
+        gap: 4rem;
+    }
+}
 
 .nav-list {
     display: flex;
@@ -10,7 +21,7 @@
 .nav-dropdown {
     list-style: none;
     position: relative;
-    z-index: 1;
+    z-index: 100;
 }
 
 .nav-button {

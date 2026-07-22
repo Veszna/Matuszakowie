@@ -7,10 +7,22 @@ header {
   justify-content: space-between; 
 }
 
+@media (max-width: 1180px) {
+  header {
+    flex-direction: column;
+  }
+}
+
 .header-pages {
   width: 100%;
   background-color: $header-color;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width: 1180px) {
+  .header-pages {
+    flex-direction: column;
+  }
 }

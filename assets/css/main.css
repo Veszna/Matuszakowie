@@ -51,6 +51,18 @@ figcaption {
   margin-top: 5px;
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+}
+
+@media (max-width: 1180px) {
+  .main-nav {
+    gap: 4rem;
+  }
+}
 .nav-list {
   display: flex;
   align-items: center;
@@ -61,7 +73,7 @@ figcaption {
 .nav-dropdown {
   list-style: none;
   position: relative;
-  z-index: 1;
+  z-index: 100;
 }
 
 .nav-button {
@@ -136,6 +148,11 @@ header {
   justify-content: space-between;
 }
 
+@media (max-width: 1180px) {
+  header {
+    flex-direction: column;
+  }
+}
 .header-pages {
   width: 100%;
   background-color: #F2EFEF;
@@ -144,6 +161,11 @@ header {
   justify-content: space-between;
 }
 
+@media (max-width: 1180px) {
+  .header-pages {
+    flex-direction: column;
+  }
+}
 .main-content {
   max-width: 70%;
   margin: 0 auto;
