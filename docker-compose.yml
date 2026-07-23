@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  jekyll-theme:
+    build: .
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/site
+      - bundle_cache:/usr/local/bundle
+    # command: bash -c "bundle install && bundle exec jekyll serve --host 0.0.0.0 --incremental --force_polling"
+    command: bash -c "bundle install && bundle exec jekyll serve --host 0.0.0.0 --incremental --force_polling --config _config.yml,_config.dev.yml"
+
+volumes:
+  bundle_cache:

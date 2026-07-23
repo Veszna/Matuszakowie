@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teresa</title>
+
+    <!-- <link rel="stylesheet" href="../styles/style.css"> -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <script src="../assets/js/script.js" defer></script>
+</head>
+
+<body>
+
+    {% include hero-nav.html %}
+
+    <main>
+<!-- liquid - här ska innehållet från den aktuella sidanplaceras -->
+        {{ content }}
+
+    </main>
+
+    {% include footer.html %}
+
+</body>
+
+</html>

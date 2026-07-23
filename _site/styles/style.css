@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+:root {
+  --background-color: #FFFDFF;
+  --header-color: #F2EFEF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fredericka-the-great-regular {
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container { 
+  width: min(70%, 1200px);
+  margin: 0 auto;
+  background-color: var(--background-color);
+  font-family: "Inter", sans-serif;
+}
+
+header {  
+  width: 100%; 
+}
+
+.header-pages {
+  background-color: var(--header-color);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 8vw + 1rem, 8rem);
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: clamp(1.25rem, 8vw + 1rem, 4rem);
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: clamp(1rem, 8vw + 1rem, 3rem);
+  font-weight: 100;
+  text-align: center;
+  margin: 20px 0;
+  line-height: 1.1;
+}
+
+.image-container {
+  position: relative;
+  margin-bottom: 350px;   
+}
+
+.image-house {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-couple {
+  position: absolute;
+  top: 73%;
+  left: 9%;
+  width: 48%;
+  max-width: 327px;
+  aspect-ratio: 327 / 416;
+  object-fit: cover;
+  z-index: 10;
+}
+
+.text-presentation {
+  position: absolute;
+  top: 105%;
+  left: 48%;
+  width: 52%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.image-text-container {
+  display: flex; 
+  gap: 20px;
+  margin: 20px 0;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+footer {
+  width: 100%;  
+  min-height: 100px; 
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ----------------------------------------------------- */
+
+@media (max-width: 1180px) {
+  .image-container {
+    margin-bottom: 40px; 
+  }
+
+  .image-couple {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 327px;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .text-presentation {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+   .image-text-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
