@@ -1,6 +1,6 @@
 @use '../abstracts/' as *;
 
-header {  
+.header-home {  
   width: 100%;
   display: flex;
   align-items: center;
@@ -8,8 +8,9 @@ header {
 }
 
 @media (max-width: 1180px) {
-  header {
+  .header-home {
     flex-direction: column;
+    margin: 20px 0;
   }
 }
 

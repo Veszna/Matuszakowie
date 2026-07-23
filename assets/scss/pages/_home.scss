@@ -1,6 +1,6 @@
 .image-container {
   position: relative;
-  margin-bottom: 350px;   
+  margin-bottom: 350px;
 }
 
 .image-house {
@@ -32,7 +32,7 @@
 
 @media (max-width: 1180px) {
   .image-container {
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
   }
 
   .image-couple {
@@ -52,4 +52,16 @@
     width: 100%;
     padding: 0 10px;
   }
+}
+
+.explanation {
+  margin: 30px auto 0 auto;
+  padding: 20px;
+  border: 1px solid #000;
+  font-size: 0.7rem;
+  width: 50%;
+  min-width: 250px;
+  text-align: center;  
+  clear: both;
+  display: block;
 }
