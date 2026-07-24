@@ -4,24 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} | {{ site.title }}</title>
+    <title>Matuszakowie</title>
 
-    <!-- <link rel="stylesheet" href="../styles/style.css"> -->
-    <!-- <link rel="stylesheet" href="../assets/css/main.css"> -->
+    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+    <!-- <link rel="stylesheet" href="/assets/css/main.css"> -->
      <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
-    <!-- <script src="../assets/js/script.js" defer></script> -->
+    <!-- <script src="assets/js/script.js" defer></script> -->
      <script src="{{ '/assets/js/script.js' | relative_url }}" defer></script>
+
 </head>
 
 <body>
 
-    {% include hero-pages.html %}
+    {% include hero-home.html %}
+
+    {% include navigation.html %}
 
     <main>
-<!-- liquid - här ska innehållet från den aktuella sidanplaceras -->
         {{ content }}
-
     </main>
 
     {% include footer.html %}
