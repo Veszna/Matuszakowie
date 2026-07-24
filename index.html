@@ -3,11 +3,9 @@ layout: home
 title: Matuszakowie
 ---
 
-<body class="container"> 
-    <main>
         <section class="image-container">
-            <img src="assets/images/Home.jpg" alt="Home" width="100%" class="image-house">
-            <img src="assets/images/Couple.jpg" alt="Couple" class="image-couple">
+            <img src="{{ '/assets/images/Home.jpg' | relative_url }}" alt="Home" class="image-house">
+            <img src="{{ '/assets/images/Couple.jpg' | relative_url }}" alt="Couple" class="image-couple">
 
             <div class="text-presentation">
                 <p>
@@ -36,5 +34,4 @@ title: Matuszakowie
         <p class="explanation">
             Den här webbplatsen är under uppbyggnad. Nya berättelser, fotografier och dokument kommer att läggas till efter hand.
         </p>
-    </main>    
-</body>
+ 
