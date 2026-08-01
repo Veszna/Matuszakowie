@@ -207,6 +207,10 @@ footer {
   }
 }
 .image-container {
+  text-align: center;
+}
+
+.image-container {
   position: relative;
   margin-bottom: 350px;
 }
